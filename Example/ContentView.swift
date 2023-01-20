@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Spacer()
-            // 2. Use TextFieldEx in place of TextField.
+            // 2. Use KMTextField in place of TextField.
             KMTextField(value:$text, placeholder:"Enter some text")
         }
         .padding()
@@ -23,7 +23,7 @@ struct ContentView: View {
         // 3. Hook up the Keyboard Manager, which will swallow our
         //    ContentView and layer a keyboard accessory view in front
         //    of it, if one has been set. This will also add our
-        //    KeyboardAccessoryViewManager to the environment.
+        //    KeyboardManager to the environment.
         .withKeyboardManager(keyboardManager:keyboardManager)
     }
 }
