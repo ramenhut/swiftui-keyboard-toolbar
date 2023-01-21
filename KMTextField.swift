@@ -54,6 +54,7 @@ struct TextFieldAccessoryView: View {
                     .keyboardType(type)
                     .multilineTextAlignment(.leading)
                     .focused($focused)
+                    .foregroundColor(foregroundColor)
                     .padding(.horizontal, 10)
                     .textPlaceholder(when:internalValue.isEmpty) {
                         if (!placeholder.isEmpty) {
